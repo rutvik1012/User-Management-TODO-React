@@ -65,7 +65,7 @@ UserMange_TODO/
 **📸 Screenshots**
 
 *User List Page*
-<img width="1080" height="800" alt="Screenshot 2025-09-12 164416" src="https://github.com/user-attachments/assets/25010bd9-d023-4dd7-b54f-8b036277fc68" />
+<img width="980" height="800" alt="Screenshot 2025-09-12 164416" src="https://github.com/user-attachments/assets/25010bd9-d023-4dd7-b54f-8b036277fc68" />
 <img width="570" height="698" alt="Screenshot 2025-09-12 164520" src="https://github.com/user-attachments/assets/837c60e0-81b5-48ae-931e-a75e13141ec7" />
 
 Display of all users with edit and delete actions.
