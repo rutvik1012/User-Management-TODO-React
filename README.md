@@ -39,6 +39,7 @@ Tailwind CSS for styling
 
 
 UserMange_TODO/
+
 │── public/              # Static assets
 │── src/
 │   ├── component/       # Components (Navbar, UserList, UpdateUser, etc.)
