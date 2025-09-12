@@ -45,9 +45,9 @@ UserMange_TODO/
 │── src/
 
 │   ├── component/       # Components (Navbar, UserList, UpdateUser, etc.)
-|
+
 │   ├── components/ui/   # Shadcn UI components
-|
+
 │   ├── Context/         # UserContext for global state
 
 │   ├── Data/            # Dummy user data
