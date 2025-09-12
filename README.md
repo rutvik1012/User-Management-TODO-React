@@ -43,21 +43,21 @@ UserMange_TODO/
 
 │── src/
 
-│ ├── component/ # Components (Navbar, UserList, UpdateUser, etc.)
+│ ├── component/     # Components (Navbar, UserList, UpdateUser, etc.)
 
-│ ├── components/ui/ # Shadcn UI components
+│ ├── components/ui/      # Shadcn UI components
 
-│ ├── Context/ # UserContext for global state
+│ ├── Context/      # UserContext for global state
 
-│ ├── Data/ # Dummy user data
+│ ├── Data/      # Dummy user data
 
-│ ├── App.jsx # Main App component
+│ ├── App.jsx     # Main App component
+ 
+│ ├── main.jsx     # Entry point
 
-│ ├── main.jsx # Entry point
+│── package.json     # Dependencies and scripts
 
-│── package.json # Dependencies and scripts
-
-│── vite.config.js # Vite configuration
+│── vite.config.js    # Vite configuration
 
 
 
