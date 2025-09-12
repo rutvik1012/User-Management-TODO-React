@@ -20,6 +20,7 @@ User Management TODO App is a simple yet powerful web application built with Rea
 
 
 
+
 **🛠️ Tech Stack**
 
 React (Vite + JSX)
@@ -33,7 +34,10 @@ Shadcn UI components
 Tailwind CSS for styling
 
 
+
 **📂 Project Structure**
+
+
 UserMange_TODO/
 │── public/              # Static assets
 │── src/
@@ -45,6 +49,8 @@ UserMange_TODO/
 │   ├── main.jsx         # Entry point
 │── package.json         # Dependencies and scripts
 │── vite.config.js       # Vite configuration
+
+
 
 
 **📸 Screenshots**
