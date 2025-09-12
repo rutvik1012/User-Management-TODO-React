@@ -39,25 +39,19 @@ Tailwind CSS for styling
 
 
 UserMange_TODO/
-│── public/ # Static assets
+
+│── public/              # Static assets
 
 │── src/
 
-│ ├── component/     # Components (Navbar, UserList, UpdateUser, etc.)
-
-│ ├── components/ui/      # Shadcn UI components
-
-│ ├── Context/      # UserContext for global state
-
-│ ├── Data/      # Dummy user data
-
-│ ├── App.jsx     # Main App component
- 
-│ ├── main.jsx     # Entry point
-
-│── package.json     # Dependencies and scripts
-
-│── vite.config.js    # Vite configuration
+│   ├── component/       # Components (Navbar, UserList, UpdateUser, etc.)
+│   ├── components/ui/   # Shadcn UI components
+│   ├── Context/         # UserContext for global state
+│   ├── Data/            # Dummy user data
+│   ├── App.jsx          # Main App component
+│   ├── main.jsx         # Entry point
+│── package.json         # Dependencies and scripts
+│── vite.config.js       # Vite configuration
 
 
 
