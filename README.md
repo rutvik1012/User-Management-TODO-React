@@ -1,3 +1,6 @@
+
+https://usemanagement.netlify.app/
+
 **User Management TODO App**
 User Management TODO App is a simple yet powerful web application built with React (Vite), leveraging Context API for global state management, React Hook Form for seamless form handling and validation, and Shadcn UI with Tailwind CSS for a modern and responsive design. This project demonstrates the implementation of core CRUD operations (Create, Read, Update, Delete), where users can be added, updated with validations (such as email and phone number), viewed in a clean list, and deleted when needed.
 
@@ -62,7 +65,6 @@ UserMange_TODO/
 
 
 
-https://usemanagement.netlify.app/
 
 
 **📸 Screenshots**
