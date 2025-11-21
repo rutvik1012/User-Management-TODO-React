@@ -1,17 +1,17 @@
-import React, { useEffect, useContext } from "react"
-import { useForm } from "react-hook-form"
-import { useNavigate } from "react-router-dom"
-import UserContext from "../Context/UserContext.jsx"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+import React, { useEffect, useContext } from "react";
+import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
+import UserContext from "../Context/UserContext.jsx";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select"
+} from "@/components/ui/select";
 
 const UpdateUser = () => {
   const {
@@ -20,21 +20,21 @@ const UpdateUser = () => {
     reset,
     setValue,
     formState: { errors },
-  } = useForm()
-  const navigate = useNavigate()
-  const { user, setUser, editUser, setEditUser } = useContext(UserContext)
+  } = useForm();
+  const navigate = useNavigate();
+  const { user, setUser, editUser, setEditUser } = useContext(UserContext);
 
   useEffect(() => {
     if (editUser) {
-      setValue("mobile", editUser.mobile)
-      setValue("firstName", editUser.firstName)
-      setValue("lastName", editUser.lastName)
-      setValue("email", editUser.email)
-      setValue("status", editUser.status)
+      setValue("mobile", editUser.mobile);
+      setValue("firstName", editUser.firstName);
+      setValue("lastName", editUser.lastName);
+      setValue("email", editUser.email);
+      setValue("status", editUser.status);
     } else {
-      reset()
+      reset();
     }
-  }, [editUser, reset, setValue])
+  }, [editUser, reset, setValue]);
 
   const onSubmit = (formData) => {
     if (editUser) {
@@ -50,9 +50,9 @@ const UpdateUser = () => {
               status: formData.status,
             }
           : item
-      )
-      setUser(updateData)
-      setEditUser(null)
+      );
+      setUser(updateData);
+      setEditUser(null);
     } else {
       // Add new user
       const newUser = {
@@ -62,12 +62,12 @@ const UpdateUser = () => {
         email: formData.email,
         mobile: formData.mobile,
         status: formData.status,
-      }
-      setUser([...user, newUser])
+      };
+      setUser([...user, newUser]);
     }
-    reset()
-    navigate("/")
-  }
+    reset();
+    navigate("/");
+  };
 
   return (
     <div className="p-6 max-w-xl mx-auto bg-white shadow rounded-lg">
@@ -123,9 +123,7 @@ const UpdateUser = () => {
             disabled={editUser} // cannot edit email on update
           />
           {errors.email && (
-            <p className="text-sm text-red-500 mt-1">
-              {errors.email.message}
-            </p>
+            <p className="text-sm text-red-500 mt-1">{errors.email.message}</p>
           )}
         </div>
 
@@ -151,7 +149,11 @@ const UpdateUser = () => {
           <Label htmlFor="mobile">Mobile Number</Label>
           <Input
             id="mobile"
-            type="tel"
+            type="text"
+            maxlength={10}
+            onInput={(e) =>
+              (e.target.value = e.target.value.replace(/[^0-9]/g, ""))
+            }
             placeholder="Enter 10 digit mobile"
             {...register("mobile", {
               required: "Mobile number is required",
@@ -162,18 +164,13 @@ const UpdateUser = () => {
             })}
           />
           {errors.mobile && (
-            <p className="text-sm text-red-500 mt-1">
-              {errors.mobile.message}
-            </p>
+            <p className="text-sm text-red-500 mt-1">{errors.mobile.message}</p>
           )}
         </div>
 
         {/* Buttons */}
         <div className="flex gap-3">
-          <Button
-            className="bg-green-600 hover:bg-green-700"
-            type="submit"
-          >
+          <Button className="bg-green-600 hover:bg-green-700" type="submit">
             {editUser ? "Update" : "Save"}
           </Button>
           <Button
@@ -186,7 +183,7 @@ const UpdateUser = () => {
         </div>
       </form>
     </div>
-  )
-}
+  );
+};
 
-export default UpdateUser
+export default UpdateUser;
