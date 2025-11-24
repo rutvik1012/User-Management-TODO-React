@@ -8,7 +8,6 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss(),
   ],
-   bash:"/User-Management-TODO-React/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

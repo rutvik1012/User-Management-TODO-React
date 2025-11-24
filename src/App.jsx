@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div>
         <UserProvider>
-        <BrowserRouter basename='/User-Management-TODO-React'>
+        <BrowserRouter>
       <Navbar/>
       {/* <UserList_two/> */}
             <Routes>
